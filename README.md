@@ -4,5 +4,5 @@ App para ajudar na alfabetização de crianças
 
 App to help children literacy
 
-__Desenvolvido com React Native__
+_Desenvolvido com React Native_
 
