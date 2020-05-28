@@ -58,17 +58,17 @@ const Menu = ( { navigation } ) => {
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: 25 
+    paddingTop: 20 
   },
   textBtn: {
       borderWidth: 0.8,
       padding: 10,
       borderColor: 'black',
-      backgroundColor: '#1E90FF',
+      backgroundColor: '#6A5ACD',
       color: 'white',
       fontWeight: 'bold',
       textAlign: "center",
-      margin: 15
+      margin: 13
   }
 });
 

@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { View, StyleSheet, Text, TouchableOpacity } from 'react-native';
+import SoundPlayer from 'react-native-sound-player';
 import sorteadorFunctions from '../Functions/sorteadorFunctions';
 
 const Sorteador = ( { route, navigation } ) => {
@@ -20,6 +21,22 @@ const Sorteador = ( { route, navigation } ) => {
     setValue(val);
   }
 
+  const playCorrectSound = () => {
+    try {
+      SoundPlayer.playSoundFile('tada', 'mp3');
+    } catch (e) {
+      console.log(`cannot play the sound file`, e)
+    }
+  }
+
+  const playWrongSound = () => {
+    try {
+      SoundPlayer.playSoundFile('wahwah', 'mp3');
+    } catch (e) {
+      console.log(`cannot play the sound file`, e)
+    }
+  }
+
   return (
     <View style={styles.container}>
 
@@ -30,6 +47,19 @@ const Sorteador = ( { route, navigation } ) => {
       </TouchableOpacity>
 
       <Text style={styles.valor}>{value}</Text>
+
+      <View style={styles.buttons}>
+        <TouchableOpacity onPress={playCorrectSound}>
+          <Text style = {styles.answerBtn}>
+            ACERTOU
+          </Text>
+        </TouchableOpacity>
+        <TouchableOpacity onPress={playWrongSound}>
+          <Text style = {styles.answerBtn}>
+            ERROU
+          </Text>
+        </TouchableOpacity>
+      </View>
 
     </View>
   );
@@ -44,7 +74,7 @@ const styles = StyleSheet.create({
       borderWidth: 0.8,
       padding: 15,
       borderColor: 'black',
-      backgroundColor: '#1E90FF',
+      backgroundColor: '#6A5ACD',
       color: 'white',
       fontWeight: 'bold',
       textAlign: "center",
@@ -55,6 +85,23 @@ const styles = StyleSheet.create({
     fontSize: 70,
     marginTop: 25,
     fontWeight: 'bold'
+  },
+  buttons: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    margin: 15
+  },
+  answerBtn: {
+    borderWidth: 0.8,
+    padding: 15,
+    borderColor: 'black',
+    backgroundColor: '#6A5ACD',
+    color: 'white',
+    fontWeight: 'bold',
+    textAlign: "center",
+    margin: 15,
+    borderRadius: 40,
+    minWidth:100
   }
 });
 

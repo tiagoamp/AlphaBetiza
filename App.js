@@ -17,7 +17,7 @@ const App = () => {
       
       <Stack.Navigator initialRouteName="Menu" 
         screenOptions={{
-          headerStyle: { backgroundColor: '#f4511e' },
+          headerStyle: { backgroundColor: '#836FFF' },
           headerTintColor: '#fff',
           headerTitleStyle: { fontWeight: 'bold' },
           headerTitleAlign: "center"
