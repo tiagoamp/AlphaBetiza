@@ -12,12 +12,13 @@ const consonantsAscii = alphabetUpperCaseAscii.filter(el => !vowelsAscii.include
 
 const lettersNotToFormSyllablesAscii = ['H', 'Y', 'W'].map(el => el.charCodeAt(0));
 
-const words = ['GATO','RATO','PATO','MACACO','VALEU','SAPATO','COLETE','BALA','COLA','BOLA','CUECA',
+const words = ['AGORA','GATO','RATO','PATO','MACACO','VALEU','SAPATO','COLETE','BALA','COLA','BOLA','CUECA',
     'BOCA','BEIJO','MATEMÁTICA','LIXO','ROUPA','CADEIRA','CARRO','PIRULITO','ÁGUA','CAFÉ','PAPAI',
     'OVO','KILO','AVIÃO','VACA','CADEIRA','PAPEL','COXA','DEDO','DADO','PEIXE','MENINA','MENINO',
     'REDE','VIDA','RODA','ROXO','NAVIO','NEVE','XÍCARA','FACA','FOCA','FEIO','FAMÍLIA','FEIJÃO',
     'JANAINA','JEITO','JIBÓIA','GOTA','LADO','MEDO','MIAU','BICO','NOVELA','NOVO','OLÁ','EU','POUCO',
-    'QUEIJO','RABO','RETO','RUA','SOPA','UVA','VIAJOU'];
+    'QUEIJO','RABO','URUBU','RUA','SOPA','UVA','VIAJOU','BALEIA','QUATRO','CHAVE','CHOCOLATE','MALUCO',
+    'ABELHA','BARULHO','CARETA','GAFANHOTO','ARANHA','BARATA'];
 
 function randomInt(min, max) {
     return Math.floor(Math.random()*(max-min+1)+min);
