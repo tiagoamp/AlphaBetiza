@@ -18,7 +18,15 @@ const words = ['AGORA','GATO','RATO','PATO','MACACO','VALEU','SAPATO','COLETE','
     'REDE','VIDA','RODA','ROXO','NAVIO','NEVE','XÍCARA','FACA','FOCA','FEIO','FAMÍLIA','FEIJÃO',
     'JANAINA','JEITO','JIBÓIA','GOTA','LADO','MEDO','MIAU','BICO','NOVELA','NOVO','OLÁ','EU','POUCO',
     'QUEIJO','RABO','URUBU','RUA','SOPA','UVA','VIAJOU','BALEIA','QUATRO','CHAVE','CHOCOLATE','MALUCO',
-    'ABELHA','BARULHO','CARETA','GAFANHOTO','ARANHA','BARATA'];
+    'ABELHA','BARULHO','CARETA','GAFANHOTO','ARANHA','BARATA',
+    'abacaxi', 'água', 'amiga', 'amizade', 'azeitona', 'beijo', 'bateria', 'botão', 'buzina', 
+    'caneta', 'coroa', 'cueca', 'dezoito', 'fogão', 'gorila', 'herói', 'hipopótamo', 'hoje', 
+    'inimigo', 'jacaré', 'limão', 'limonada', 'luva', 'maluco', 'moleza', 'moeda', 
+    'natureza', 'número', 'ouro', 'ouvido', 'papagaio', 'peteca', 'perigo', 'pomadinha', 
+    'qualidade', 'quieto', 'rápido', 'sábado', 'suco', 'touro', 'violeta', 'zero', 
+    'barriga', 'garrafa', 'terremoto', 'sorriso', 'geladeira', 'árvore', 'barco', 'cobertor', 'formiga', 
+    'tartaruga', 'guardanapo', 'assobio', 'pessoa', 'tesoura', 'raposa', 'disco', 'moça', 'alfinete',
+    'chinelo', 'mochila', 'agulha', 'aquário'];
 
 function randomInt(min, max) {
     return Math.floor(Math.random()*(max-min+1)+min);
@@ -70,7 +78,7 @@ const sorteadorFunctions = {
     },
 
     generateUpperRandomWord: () => {
-        return getRandomWord();
+        return getRandomWord().toUpperCase();
     },
 
     generateLowerRandomWord: () => {
