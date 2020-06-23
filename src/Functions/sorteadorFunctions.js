@@ -12,12 +12,21 @@ const consonantsAscii = alphabetUpperCaseAscii.filter(el => !vowelsAscii.include
 
 const lettersNotToFormSyllablesAscii = ['H', 'Y', 'W'].map(el => el.charCodeAt(0));
 
-const words = ['GATO','RATO','PATO','MACACO','VALEU','SAPATO','COLETE','BALA','COLA','BOLA','CUECA',
+const words = ['AGORA','GATO','RATO','PATO','MACACO','VALEU','SAPATO','COLETE','BALA','COLA','BOLA','CUECA',
     'BOCA','BEIJO','MATEMÁTICA','LIXO','ROUPA','CADEIRA','CARRO','PIRULITO','ÁGUA','CAFÉ','PAPAI',
     'OVO','KILO','AVIÃO','VACA','CADEIRA','PAPEL','COXA','DEDO','DADO','PEIXE','MENINA','MENINO',
     'REDE','VIDA','RODA','ROXO','NAVIO','NEVE','XÍCARA','FACA','FOCA','FEIO','FAMÍLIA','FEIJÃO',
     'JANAINA','JEITO','JIBÓIA','GOTA','LADO','MEDO','MIAU','BICO','NOVELA','NOVO','OLÁ','EU','POUCO',
-    'QUEIJO','RABO','RETO','RUA','SOPA','UVA','VIAJOU'];
+    'QUEIJO','RABO','URUBU','RUA','SOPA','UVA','VIAJOU','BALEIA','QUATRO','CHAVE','CHOCOLATE','MALUCO',
+    'ABELHA','BARULHO','CARETA','GAFANHOTO','ARANHA','BARATA',
+    'abacaxi', 'água', 'amiga', 'amizade', 'azeitona', 'beijo', 'bateria', 'botão', 'buzina', 
+    'caneta', 'coroa', 'cueca', 'dezoito', 'fogão', 'gorila', 'herói', 'hipopótamo', 'hoje', 
+    'inimigo', 'jacaré', 'limão', 'limonada', 'luva', 'maluco', 'moleza', 'moeda', 
+    'natureza', 'número', 'ouro', 'ouvido', 'papagaio', 'peteca', 'perigo', 'pomadinha', 
+    'qualidade', 'quieto', 'rápido', 'sábado', 'suco', 'touro', 'violeta', 'zero', 
+    'barriga', 'garrafa', 'terremoto', 'sorriso', 'geladeira', 'árvore', 'barco', 'cobertor', 'formiga', 
+    'tartaruga', 'guardanapo', 'assobio', 'pessoa', 'tesoura', 'raposa', 'disco', 'moça', 'alfinete',
+    'chinelo', 'mochila', 'agulha', 'aquário'];
 
 function randomInt(min, max) {
     return Math.floor(Math.random()*(max-min+1)+min);
@@ -69,7 +78,7 @@ const sorteadorFunctions = {
     },
 
     generateUpperRandomWord: () => {
-        return getRandomWord();
+        return getRandomWord().toUpperCase();
     },
 
     generateLowerRandomWord: () => {
