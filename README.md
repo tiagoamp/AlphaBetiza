@@ -1,4 +1,4 @@
 # AlphaBetiza
 Sistema para ajudar na alfabetização de crianças
 
-__Desenvolvido com NodeJS, React e React Native.__
+_Desenvolvido com NodeJS, React e React Native._
