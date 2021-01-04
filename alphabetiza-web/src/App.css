@@ -1,0 +1,36 @@
+:root {
+  --color1: #107a8b;    /* background */
+  --color2: #2cb978;
+  --color3: #83e85a;
+  --color4: #3b5441;
+
+  --color5: #1e6262;
+  --color6: #2d767f;
+  --color7: #b4f1f1;
+  --color8: #ecfffb;
+
+  --color9: #EEE9E9;
+  --color10: #FFFAFA;
+  --color11: #363636; 
+}
+
+body {
+  background-color: var(--color9);
+  color: var(--color11)
+}
+
+.App {
+  height: 100vh;
+  width: auto;
+  display: grid;
+  grid-template-columns: 20% 30% 30% 20%;
+  grid-template-rows: 10% 80% 10%;
+  grid-template-areas:
+    "grid_header grid_header grid_header grid_header"
+    "grid_main   grid_main   grid_main   grid_main  "
+    "grid_footer grid_footer grid_footer grid_footer"
+}
+
+.main {
+  grid-area: grid_main;
+}
