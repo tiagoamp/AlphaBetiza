@@ -1,0 +1,66 @@
+.sign_boxes {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+
+.sign_provisorio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    margin: 30px;
+    background-color: var(--color10);
+}
+
+.sign_provisorio a {
+    text-decoration: none;
+    margin: 20px;
+    padding: 10px;
+    color: var(--color11);
+    font-weight: bold;
+    border: 1px dashed;
+    border-radius: 20px;
+    letter-spacing: 0.3rem;
+}
+
+
+@media screen and (max-width: 600px) {
+    .sign_boxes {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .sign_provisorio {
+        width: 80%;
+        padding: 10px;
+        margin: 10px;
+    }
+}
+
+
+/*
+.signin, .signup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+}
+
+.signin form, .signup form {
+    display: flex;
+    flex-direction: column;
+}
+*/

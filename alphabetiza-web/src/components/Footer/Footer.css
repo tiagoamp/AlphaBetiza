@@ -1,0 +1,21 @@
+footer {
+    grid-area: grid_footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    color: var(--color5);
+  }
+  
+  footer .footer__info1 {
+    padding: 0px 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  
+  footer .footer__info2 {
+    padding: 0px 10px;
+    font-size: 0.8rem;
+    font-style: italic;
+  }
+  
